@@ -43,7 +43,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const price = await stripe.prices.retrieve('price_1J5ERTDHwjI6oyWHZtzKCIrq');
 
   const product = {
-    pridceId: price.id,
+    priceId: price.id,
     amount: new Intl.NumberFormat('pt-BR', {
       style: 'currency',
       currency: 'BRL'
